@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+/* Index.html inicio */
+
+/*Header index.html inicio */
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	z-index: 90;
+}
+
+.logo {
+	font-size: 40px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	transition: 2s;
+}
+
+.logo:hover {
+	color: #000000;
+	transition: 2s;
+}
+
+.hamburger_menu {
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/*Header index.html fin */
+
+/*Offcavas index.html inicio */
+
+.offcanvas{
+	background-color:rgb(0, 0, 0);
+}
+
+.offcanvas-body{
+	background-color:rgb(255, 255, 255);
+}
+
+.menu li a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 35px;
+}
+
+.menu li a:hover {
+	color: rgb(255, 255, 255);
+    background-color: #1e838a;
+	border-radius: 20px;
+	transition: 1.5s;
+}
+
+.menu .a2:hover {
+	color: rgb(6, 6, 6);
+    background-color: rgb(255, 180, 41);
+	border-radius: 20px;
+	transition: 1.5s;
+}
+
+.menu .a3:hover {
+	color: rgb(255, 255, 255);
+    background-color: black;
+	border-radius: 20px;
+	transition: 1.5s;
+}
+
+/*Offcavas index.html fin */
+
+/*Home index.html inicio */
+
+.home_wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.video_ab {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+	z-index: -2;
+}
+
+.home_wrapper h2 {
+	color: #fff;
+	font-size: 60px;
+	margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fff;
+	display: block;
+	text-align: center;
+}
+
+.home_wrapper p{
+	color: #ffffff;
+	font-size: 30px;
+	margin: 0;
+	width: 45%;
+	line-height: 1.8;
+	margin: auto;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fffffff9;
+	display: block;
+}
+
+.row .btn{
+	background: transparent;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 15px;
+	text-transform: uppercase;
+	border-radius: 25px;
+	display: inline-block;
+	margin-top: 25px;
+	border: 2px solid #fff;
+	transition:2s ease-in;
+}
+
+.row .btn:hover{
+	background: #fff;
+	color: #000;
+	transition:1s ease-in;
+}
+
+/*Home index.html fin */
+
+/*Footer index.html inicio */
+footer h5{
+	font-size: 38px;
+	color: #ffffff;
+}
+
+footer p{
+	font-size: 20px;
+	color: rgb(255, 0, 0);
+}
+
+/*Footer index.html fin */
+
+/* Media queries index.html */
+
+/* `sm` se aplica a dispositivos x-small (teléfonos verticales, menos de 576px)*/
+@media screen and (max-width: 575.98px) { 
+
+.logo {
+
+	font-size: 25px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	transition: 2s;
+
+}
+
+.home_wrapper h2 {
+	color: #fff;
+	font-size: 40px;
+	margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fff;
+	display: block;
+	text-align: center;
+}
+	
+.home_wrapper p{
+	color: #ffffff;
+	font-size: 20px;
+	margin: 0;
+	width: 45%;
+	line-height: 1.8;
+	margin: auto;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fffffff9;
+	display: block;
+}
+
+}
+
+/* Dispositivos pequeños (teléfonos horizontales, 576px y más)*/
+@media (min-width: 576px) {
+.logo {
+
+	font-size: 25px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	transition: 2s;
+	
+}
+	
+.home_wrapper h2 {
+	color: #fff;
+	font-size: 50px;
+	margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fff;
+	display: block;
+	text-align: center;
+}
+		
+.home_wrapper p{
+	color: #ffffff;
+	font-size: 20px;
+	margin: 0;
+	width: 45%;
+	line-height: 1.8;
+	margin: auto;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fffffff9;
+	display: block;
+}
+
+}
+
+/* Dispositivos XX-Large (escritorios más grandes, 1400px y más)*/
+@media (min-width: 1400px) {
+
+.logo {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	transition: 2s;
+	
+}
+	
+.home_wrapper h2 {
+	color: #fff;
+	font-size: 70px;
+	margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fff;
+	display: block;
+	text-align: center;
+}
+		
+.home_wrapper p {
+	color: #ffffff;
+	font-size: 30px;
+	margin: 0;
+	width: 45%;
+	line-height: 1.8;
+	margin: auto;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #fffffff9;
+	display: block;
+}
+
+}
+
+/* Index.html fin */
+
